@@ -65,13 +65,13 @@ $(".btn").click(function(event) {
     setTimeout(function() {
       $("body").removeClass("game-over");
     },200);
-    $("h1").text("Game Over, Press Any Key to Restart")
+    $("h1").text("Game Over :(, Press to Restart")
     startOver();
   }
 });
 
 
-$(document).keydown(function(event) {
+$("h1").click(function(event) {
   while (startFlag === false) {
     startFlag = true;
     nextSequence();
