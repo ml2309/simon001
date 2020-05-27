@@ -47,7 +47,7 @@ function startOver() {
 }
 
 //User Interface Function//
-$(".btn").click(function(event) {
+$(".btn").on('click touch', function(event) {
   var userChosenColour = event.target.id;
   userClickedPattern.push(userChosenColour);
   animatePress(userChosenColour);
@@ -71,7 +71,7 @@ $(".btn").click(function(event) {
 });
 
 
-$("h1").click(function(event) {
+$("h1").on('click touch', function(event) {
   while (startFlag === false) {
     startFlag = true;
     nextSequence();
